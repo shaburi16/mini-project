@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+@media (max-width: 1399px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(5deg,#290001,#8E3200);
+    
+} 
+
+/* NAVIGATION*/
+
+nav {
+    width: 100%;
+    height: 100%vh;
+    display: flex;
+    top: -40px;
+    align-items: center;
+    padding: 20px ;
+    position:fixed;
+    justify-content: space-between;
+    z-index: 99; 
+}
+
+nav a,i{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #eed5bf;
+}
+
+
+nav {
+    width: 100%;
+    height: 100%vh;
+    display: flex;
+    top: -40px;
+    align-items: center;
+    padding: 20px ;
+    position:fixed;
+    justify-content: space-between;
+    z-index: 99; 
+}
+
+nav a,i{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #eed5bf;
+}
+
+
+nav {
+    width: 100%;
+    height: 100%vh;
+    display: flex;
+    top: -40px;
+    align-items: center;
+    padding: 20px ;
+    position:fixed;
+    justify-content: space-between;
+    z-index: 99; 
+}
+
+nav a,i{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #eed5bf;
+    padding: 10px 0;
+    transition: .5s ease;
+}
+
+/*preloader*/
+ #preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    #preloader video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Hide main content initially */
+    #main-content {
+      display: none;
+    }
+
+/*MAIN*/
+
+.one {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
+    padding-right: 50px;
+    left: 85%;
+}
+
+.one h1{
+    display: flex;
+    font-size: 9rem;
+    -webkit-text-stroke: 2px black;
+    gap: 20PX;
+
+    background: linear-gradient(
+        90deg,
+        #C69B7B,
+        #CA5116,
+       #290001
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.1;
+}
+
+
+
+.center-img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 43%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+#choco1{
+    position: absolute;
+    top: 19%;
+    left: 38%;
+    width:13%;
+    transition: all cubic-bezier(0.19,1,0.22,1)0.5s;
+    z-index: 1;
+}
+
+#spal{
+    position: absolute;
+    width:24%;
+    z-index: 1;
+    bottom: 27%;
+    right: 27%;
+    transition: all cubic-bezier(0.19,0.22,1)0.5s;
+}
+
+#spall{
+    position:absolute;
+    width: 24%;
+    z-index: 1;
+    bottom: 27%;
+    left: 36%;
+}
+
+#m1{
+    top: 60%;
+    right: 10%;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 5%;
+} 
+
+/*PAGE 2*/
+
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+     background:linear-gradient(350deg, #F9B282,
+        #DE6B35,
+        #8F4426);
+}
+
+.lft-two ,.rgh-two{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:10px;
+    flex-direction: column;
+     transition: all cubic-bezier(0.19,0.22,1)0.5s;
+   
+}
+
+#svg{
+    margin-top: 29%;
+   width: 80%;
+  transform: rotateX(40deg);
+}
+
+.rgh-two h1{
+    color: #fff;
+    font-size: 5vw;
+}
+
+.rgh-two p{
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+
+/* PAGE 3*/
+
+.three{
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+     background:linear-gradient(350deg, #F9B282,
+        #DE6B35,
+        #522001);
+    /*
+    background:linear-gradient(45deg,#A64B2A,#D7A86E#8E3200);*/
+   
+}
+
+.card{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    margin-top: 10vh;
+    height: 75vh;
+    border-radius: 33px;
+    
+}
+
+
+
+
+.card h1{
+    font-size: 2vw;
+    margin-top: 50vh;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 30px;
+    border: none;
+    background:linear-gradient(45deg,#711DB0,#E9A8F2);
+    color: #fff;
+    padding: 1vw 2vw;
+    border: 2px solid #711DB0;
+    outline: 2px solid transparent;
+}
+
+/* PURPLE COOKIE*/
+
+.card:nth-child(1){
+    background:linear-gradient(
+            45deg,
+            #ce86b2,
+            #BE6DB7,
+            #C449C2
+        );
+}
+
+#blue-cookie{
+    rotate: 290deg;
+    top: 22%;
+    width: 70%;
+    position: absolute;
+    left: 14%;
+    transform: translate(-50% 0%);
+    transition: all cubic-bezier(0.19,0.22,1)0.5s;
+}
+
+#blue-spal{
+    top:10%;
+    left: 5%;
+    width: 22vw;
+    position: absolute;
+}
+
+#b-button{
+    font-size: 1vw;
+    border-radius: 30px;
+    border: none;
+    background:linear-gradient(45deg,#9D5C0D,#290001);
+    color: #fff;
+    padding: 1vw 2vw;
+    border: 2px solid #290001;
+    outline: 2px solid transparent;
+}
+
+/* YELLOW COOKIE*/
+
+
+.card:nth-child(3){
+    background:linear-gradient(
+        45deg,
+        #eed168,
+        #FF9800,
+        #D36B00);
+}
+
+#yel-cookie{
+    top: 21%;
+    width: 130%;
+    position: absolute;
+    transform: translate(-50% 0%);
+    margin-left: 30px;
+    position: absolute;
+    transition: all cubic-bezier(0.19,0.22,1)0.5s;
+}
+
+#yel-spal{
+    position: absolute;
+    width: 20vw;
+    top:16%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#man-button{
+    font-size: 1vw;
+    border-radius: 30px;
+    border: none;
+    background:linear-gradient(45deg,#e49b56,#ec6e5b);
+    color: #fff;
+    padding: 1vw 2vw;
+    border: 2px solid #ff5e00;
+    outline: 2px solid transparent;
+}
+
+/* CHOCOLATE */
+
+
+.card:nth-child(2){
+    background:linear-gradient(
+            45deg,
+            #9D5C0D,
+            #522001,
+            #321313
+            
+        );
+}

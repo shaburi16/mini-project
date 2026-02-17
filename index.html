@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACARON</title>
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" 
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---CSS-->
+    <link rel="stylesheet" href="style.csS">
+    
+</head>
+
+<body>
+    <!--PRELOADER-->
+    <div id="preloader">
+    <video autoplay muted playsinline id="preloaderVideo">
+      <source src="images/LOADER.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+
+  <!--MAINN -->
+    <div id="main">
+        <nav>
+            <div class="logo">
+                <a href="">
+                    <img src="images/Macaron.png" alt="">
+                </a>
+            </div>
+            <!-- option 
+            <img src="logo.png" alt="Logo" class="logo">-->
+            <div class="cntr-nav">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Contact</a>
+                 
+            </div>
+           
+        </nav>
+
+        <div class="one">
+            <h1 id="onee"> Chocolate . . . Macaron</h1> 
+            <img id="choco1" src="images/chocolate.png" alt="">
+            <img id="cookie" src="images/choco.png" alt="" class="center-img">
+            <img id="spal" src="images/splashc.png" alt="">
+            <img id="spall" src="images/splashc.png" alt="">
+            <img id="m1" src="images/chocolate.png" alt="">
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="lft-two">
+            <img id="svg" src="images/splashc.png" alt="">
+        </div>
+        <div class="rgh-two">
+            <h1> Flavour </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum unde dolores, consequatur iusto, quia illum consectetur nobis quidem 
+                ad assumenda laudantium exercitationem maiores autem veniam ipsam sapiente quaerat. Nam, distinctio? Maxime ipsum id, cum expedita quod 
+                nihil optio exercitationem voluptates unde quidem, 
+                vitae amet quasi odio aspernatur consequuntur tempore architecto blanditiis odit dolorum sit delectus mollitia, laborum reprehenderit! 
+                Voluptates, unde hic? Accusantium
+                delectus fugiat culpa optio numquam. Neque corporis dolores facilis assumenda illum nihil repudiandae quo impedit fugiat illo libero 
+                saepe officiis distinctio aspernatur
+                odio incidunt, labore quaerat atque,
+                quidem unde fuga ut deserunt minus! Unde non modi sequi.</p>
+        </div>
+    </div>
+
+    <div class="three">
+        <div class="card">
+            <img id="blue-spal" src="images/pusplash.png" alt="">
+            <img id="blue-cookie" src="images/bluecookie.png" alt="">
+            <h1>Blueberry</h1>
+            <button>Get Yours
+                <div class="star1"></div>
+                <div class="star2"></div>
+                <div class="star3"></div>
+                <div class="star4"></div>
+            </button>
+        </div>
+        <div class="card">
+            <h1 id>Chocolate</h1>
+            <button id="b-button">Get Yours</button>
+        </div>
+        <div class="card">
+            <img id="yel-spal" src="images/mangosplash.png" alt="">
+            <img id="yel-cookie" src="images/yellowcookie.png" alt="">
+            <h1>Mango</h1>
+            <button id="man-button">Get Yours</button>
+        </div>
+    </div>
+        
+   
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+     integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+    <!--JS-->
+    
+  <script>
+  const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
+  const video = document.getElementById("preloaderVideo");
+
+  // Set video playback speed (e.g., 2 = double speed, 1.5 = 1.5x speed)
+  video.playbackRate = 2.5;
+
+  // When video ends, hide preloader and show website
+  video.onended = () => {
+    preloader.style.display = "none";
+    mainContent.style.display = "block";
+  };
+
+</script>
+     <script src="ra.js"></script>
+ 
+</body>
+</html>
