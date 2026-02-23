@@ -14,6 +14,8 @@
 </head>
 <body>
     <div id="main">
+
+        <!--Navbar--> 
         <div id="nav">
             <h1><i class="ri-menu-fill"></i>Menu</h1>
             <div id="nav-part2">
@@ -29,29 +31,78 @@
                 <h5>Contact</h5>
                 <h5>Our Story</h5>
             </div>
-            <i class="ri-search-line"></i>
+            <div class="search-container">
+                <i class="ri-search-line search-icon"></i>
+                <div class="search-box">
+                <input type="text" placeholder="Search here...">
+            </div>
+            </div>
         </div>
+
+        <!-- ============= Main Section ===================== -->
+
         <div id="content">
+            <img src="./img/bottle.png" alt="">
             <div id="left">
                 <h1>Your favourite <span>Coke</span> just got reinvented.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae, vero at, officia ducimus inventore . </p>
                 <div class="cta">
                 <button>Taste Now!<i class="ri-shopping-bag-3-line"></i></button> 
                 <i class="ri-heart-line heart"></i>
-
                 </div>
             </div>
             <div id="center">
                 <div id="center-bg"></div>
             </div>
             <div id="right"></div>
-            
-       <img src="./img/bottle.png" alt="">
-            
+ 
+        </div>
+    </div>
 
+    <!-- ================= NEXT PAGE SECTION ================= -->
+<section id="CokeFlavors">
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1024px-Coca-Cola_logo.svg.png" alt="">
+<div class="slider-buttons">
+        <button><i class="ri-arrow-left-line"></i></button>
+        <button><i class="ri-arrow-right-line"></i></button>
+    </div>
+
+    <div class="news-wrapper">
+        <div class="news-container">
+
+            <!-- Card 1 -->
+            <div class="news-card">
+                <img src="img/cherry.png" alt="">
+                <div class="overlay">
+                    <h3>Creative Campaign</h3>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="news-card">
+                <img src="img/zero.png" alt="">
+                <div class="overlay">
+                    <h3>Cherry Float Launch</h3>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="news-card">
+                <img src="img/image-381513-1685703917-removebg-preview.png" alt="">
+                <div class="overlay">
+                    <h3>Global Ranking</h3>
+                </div>
+            </div>
 
         </div>
     </div>
-    
+
+</section>
+
+ <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
