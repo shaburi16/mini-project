@@ -66,6 +66,23 @@ html,body{
     background-color: rgb(230, 17, 17);
 }
 
+#nav-part2 h5{
+    position:relative;
+    cursor:pointer;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+/* hover effect */
+#nav-part2 h5:hover{
+    color:rgb(249, 248, 248);
+    transform:translateY(-2px);
+}
+
+#nav-part2 h5:hover::after{
+    width:100%;
+}
+
 /*SEarch Content */
 .search-container{
     position: relative;
